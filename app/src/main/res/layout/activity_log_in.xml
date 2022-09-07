@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn"
+    android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="204dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/flower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="398dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/app_logo"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/edt_background"
+        android:hint="Email"
+        android:paddingLeft="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_logo" />
+
+    <EditText
+        android:id="@+id/edit_pass"
+        android:layout_width="395dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/edt_email"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/edt_background"
+        android:hint="Password"
+        android:paddingLeft="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_logo" />
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="120dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/edit_pass"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/button_color"
+        android:text="LOG IN"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="121dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/edit_pass"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="532dp"
+        android:background="@drawable/button_color"
+        android:text="SIGN UP"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
